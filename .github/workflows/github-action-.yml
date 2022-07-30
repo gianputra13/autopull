@@ -20,7 +20,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - name: CD
       #   run: echo 'CD is Disabled (Check workflow comment for the code).'
-      - uses: action/checkout@v2
+      - uses: action/autopull
 
       - name: Deploy using ssh
         uses: appleboy/ssh-action@master
